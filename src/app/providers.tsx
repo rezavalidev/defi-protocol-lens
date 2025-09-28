@@ -9,6 +9,12 @@ import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import { ReactNode } from 'react'
 import { env } from '@/lib/env'
 
+declare module 'wagmi' {
+  interface Register {
+    config: typeof config
+  }
+}
+
 const config = getDefaultConfig({
   appName: 'DeFi Protocol Lens',
   projectId: env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID,

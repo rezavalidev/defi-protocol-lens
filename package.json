@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@bgd-labs/aave-address-book": "^4.31.0",
     "@rainbow-me/rainbowkit": "^2.2.8",
     "@tanstack/react-query": "^5.85.6",
     "class-variance-authority": "^0.7.1",
